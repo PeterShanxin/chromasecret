@@ -1,4 +1,7 @@
 node_modules/
-__pycache__/
+build/
+dist/
+.vercel/
 *.log
-.DS_Store
+test-results/
+__pycache__/

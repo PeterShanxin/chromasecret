@@ -1,0 +1,62 @@
+name: Build and bilingual browser checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - run: npm run build
+      - run: npm test
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install playwright==1.57.0
+      - run: python -m playwright install --with-deps chromium
+      - name: Native-origin English and Chinese browser checks
+        run: |
+          node scripts/serve.cjs >/tmp/chromasecret-server.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
+          for attempt in $(seq 1 30); do
+            curl --silent --fail http://127.0.0.1:5173/ >/dev/null && break
+            sleep 1
+          done
+          python scripts/i18n_smoke.py
+          mv test-results/i18n-smoke.json test-results/local-i18n-smoke.json
+      - name: Public production smoke test (not a deploy step)
+        if: github.event_name != 'pull_request'
+        env:
+          CHROMASECRET_URL: https://chromasecret.vercel.app/
+        run: |
+          python scripts/i18n_smoke.py
+          mv test-results/i18n-smoke.json test-results/production-i18n-smoke.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-checks
+          path: test-results/
+          retention-days: 7
+      - uses: actions/upload-artifact@v4
+        with:
+          name: chromasecret-site
+          path: dist/
+          retention-days: 7
