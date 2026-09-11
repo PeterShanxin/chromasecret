@@ -1,0 +1,71 @@
+name: Restore verified Chromasecret source
+
+on:
+  push:
+    branches: [main]
+    paths: ['.bootstrap/**', '.github/workflows/bootstrap.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: source-bootstrap
+  cancel-in-progress: false
+
+jobs:
+  restore:
+    if: github.repository == 'PeterShanxin/chromasecret'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify every byte before extracting the supplied source
+        run: |
+          python3 - <<'PY'
+          import base64, hashlib, io, pathlib, zipfile, stat
+          root = pathlib.Path.cwd()
+          paths = [root / '.bootstrap' / f'part-{i:02d}' for i in range(16)]
+          encoded = b''.join(p.read_bytes() for p in paths)
+          data = base64.b64decode(encoded, validate=True)
+          expected = 'b80ce42193fe27a917d67db1f86a46d526ab4b4a31eef14cad58fdc5b0ab3a84'
+          actual = hashlib.sha256(data).hexdigest()
+          if actual != expected:
+              for p in paths:
+                  b = p.read_bytes()
+                  h = hashlib.sha1(b'blob ' + str(len(b)).encode() + b'\0' + b).hexdigest()
+                  print(p.name, len(b), h)
+              raise SystemExit(f'Archive integrity failure: {actual}')
+          with zipfile.ZipFile(io.BytesIO(data)) as archive:
+              assert archive.testzip() is None, 'ZIP CRC verification failed'
+              for entry in archive.infolist():
+                  name = pathlib.PurePosixPath(entry.filename)
+                  assert not name.is_absolute() and '..' not in name.parts
+                  assert not stat.S_ISLNK(entry.external_attr >> 16)
+                  if not name.parts or name.parts[0] in ('.git', '.github'):
+                      continue
+                  archive.extract(entry, root)
+              print(f'SHA-256 verified; recovered {len(archive.infolist())} archive entries.')
+          PY
+      - name: Install pinned build dependency and create lockfile
+        run: npm install --ignore-scripts --no-audit --no-fund
+      - name: Build the self-contained bilingual application
+        run: npm run build
+      - name: Run numerical and privacy-profile regression tests
+        run: npm test
+      - name: Commit the actual source and standalone application
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add src public scripts tests docs package.json package-lock.json tsconfig.json vercel.json README.md LICENSE THIRD_PARTY_NOTICES.txt .gitignore index.html
+          git rm -r .bootstrap
+          git commit -m 'feat: publish Chromasecret with English and Simplified Chinese UI'
+          git push origin HEAD:main
+      - uses: actions/upload-artifact@v4
+        with:
+          name: chromasecret-static-site
+          path: dist/
+          retention-days: 7
