@@ -1,0 +1,1615 @@
+{
+  "protocol": "72 synthetic 2AFC trials; 6 seeds per phenotype; 96 search candidates; same-family model checks only. No human data. Indices are not recognition percentages.",
+  "results": [
+    {
+      "summary": {
+        "name": "Normal",
+        "kind": "normal",
+        "severity": 0,
+        "n": 6,
+        "familyMatches": 4,
+        "uncertain": 6,
+        "meanSeverity": 0.205,
+        "objectiveBefore": -0.234,
+        "objectiveAfter": 0.084,
+        "trueDiffBefore": 0,
+        "trueDiffAfter": 0,
+        "improvedRuns": 0,
+        "targetAfter": 0.13,
+        "typicalAfter": 0.13,
+        "filterAttack": 0.13,
+        "channelAttack": 0.691
+      },
+      "runs": [
+        {
+          "seed": 1,
+          "fit": "normal",
+          "label": "Uncertain / overlapping models",
+          "severity": 0,
+          "interval": [
+            0,
+            0
+          ],
+          "confidence": "limited",
+          "fitObjectiveBefore": -0.484,
+          "fitObjectiveAfter": -0.053,
+          "fitDiffBefore": -0.053,
+          "fitDiffAfter": -0.001,
+          "trueDiffBefore": 0,
+          "trueDiffAfter": 0,
+          "targetAfter": 0.041,
+          "typicalAfter": 0.041,
+          "filterAttack": 0.041,
+          "channelAttack": 0.267,
+          "grayAttack": 0,
+          "equalY": true,
+          "isoY": {
+            "score": -0.053,
+            "diff": -0.001,
+            "gray": 0
+          },
+          "nearNull": {
+            "score": -0.054,
+            "diff": -0.001,
+            "gray": 0.001
+          },
+          "syntheticPosterior": 0.714,
+          "candidate": {
+            "id": "c-be57d4b5",
+            "seed": 3193427125,
+            "family": "dots",
+            "kind": "normal",
+            "severity": 0,
+            "signal": 0.004028835015547389,
+            "distraction": 0.3174126344023529,
+            "residualNoise": 0.05,
+            "luminanceNoise": 0.004128429967900262,
+            "equalY": true,
+            "angle": 0.016129993344657114,
+            "size": 11.618792042424522,
+            "base": 0.31717511082160493,
+            "invert": false
+          }
+        },
+        {
+          "seed": 2,
+          "fit": "normal",
+          "label": "Uncertain / overlapping models",
+          "severity": 0,
+          "interval": [
+            0,
+            0
+          ],
+          "confidence": "limited",
+          "fitObjectiveBefore": -0.398,
+          "fitObjectiveAfter": -0.053,
+          "fitDiffBefore": -0.019,
+          "fitDiffAfter": 0,
+          "trueDiffBefore": 0,
+          "trueDiffAfter": 0,
+          "targetAfter": 0.044,
+          "typicalAfter": 0.044,
+          "filterAttack": 0.044,
+          "channelAttack": 0.276,
+          "grayAttack": 0,
+          "equalY": false,
+          "isoY": {
+            "score": -0.052,
+            "diff": 0,
+            "gray": 0
+          },
+          "nearNull": {
+            "score": -0.053,
+            "diff": 0,
+            "gray": 0
+          },
+          "syntheticPosterior": 0.714,
+          "candidate": {
+            "id": "c-a4cc377b",
+            "seed": 2764846971,
+            "family": "dots",
+            "kind": "normal",
+            "severity": 0,
+            "signal": 0.004,
+            "distraction": 0.28457149741977217,
+            "residualNoise": 0.05,
+            "luminanceNoise": 0.0030030958002665938,
+            "equalY": false,
+            "angle": -0.010330377379432315,
+            "size": 15,
+            "base": 0.31717511082160493,
+            "invert": false
+          }
+        },
+        {
+          "seed": 3,
+          "fit": "tritan",
+          "label": "Uncertain / overlapping models",
+          "severity": 0.534,
+          "interval": [
+            0.1,
+            0.9
+          ],
+          "confidence": "limited",
+          "fitObjectiveBefore": -0.134,
+          "fitObjectiveAfter": -0.015,
+          "fitDiffBefore": 0.094,
+          "fitDiffAfter": 0.071,
+          "trueDiffBefore": 0,
+          "trueDiffAfter": 0,
+          "targetAfter": 0.127,
+          "typicalAfter": 0.127,
+          "filterAttack": 0.127,
+          "channelAttack": 0.924,
+          "grayAttack": 0.001,
+          "equalY": true,
+          "isoY": {
+            "score": -0.015,
+            "diff": 0.071,
+            "gray": 0.001
+          },
+          "nearNull": {
+            "score": -0.043,
+            "diff": 0.071,
+            "gray": 0.002
+          },
+          "syntheticPosterior": 0.714,
+          "candidate": {
+            "id": "c-c8821a1f",
+            "seed": 3363969567,
+            "family": "noise",
+            "kind": "tritan",
+            "severity": 0.534393992840983,
+            "signal": 0.01523843677978255,
+            "distraction": 0.33967026422242264,
+            "residualNoise": 0.011728630574907572,
+            "luminanceNoise": 0.004928203257709415,
+            "equalY": true,
+            "angle": 0.07873205912765116,
+            "size": 15,
+            "base": 0.31717511082160493,
+            "invert": false
+          }
+        },
+        {
+          "seed": 4,
+          "fit": "protan",
+          "label": "Uncertain / overlapping models",
+          "severity": 0.693,
+          "interval": [
+            0.1,
+            1
+          ],
+          "confidence": "limited",
+          "fitObjectiveBefore": 0.429,
+          "fitObjectiveAfter": 0.714,
+          "fitDiffBefore": 0.527,
+          "fitDiffAfter": 0.913,
+          "trueDiffBefore": 0,
+          "trueDiffAfter": 0,
+          "targetAfter": 0.412,
+          "typicalAfter": 0.412,
+          "filterAttack": 0.412,
+          "channelAttack": 2.163,
+          "grayAttack": 0.02,
+          "equalY": false,
+          "isoY": {
+            "score": 0.658,
+            "diff": 0.806,
+            "gray": 0
+          },
+          "nearNull": {
+            "score": 0.714,
+            "diff": 0.913,
+            "gray": 0.02
+          },
+          "syntheticPosterior": 0.714,
+          "candidate": {
+            "id": "c-3283bbc",
+            "seed": 52968380,
+            "family": "mosaic",
+            "kind": "protan",
+            "severity": 0.6929063470309863,
+            "signal": 0.027421469421733582,
+            "distraction": 0.22560607314443182,
+            "residualNoise": 0.044199447500485774,
+            "luminanceNoise": 0.0050140685037193536,
+            "equalY": false,
+            "angle": -0.050613700947724286,
+            "size": 15,
+            "base": 0.31717511082160493,
+            "invert": false
+          }
+        },
+        {
+          "seed": 5,
+          "fit": "normal",
+          "label": "Uncertain / overlapping models",
+          "severity": 0,
+          "interval": [
+            0,
+            0
+          ],
+          "confidence": "limited",
+          "fitObjectiveBefore": -0.287,
+          "fitObjectiveAfter": -0.032,
+          "fitDiffBefore": 0.031,
+          "fitDiffAfter": 0.013,
+          "trueDiffBefore": 0,
+          "trueDiffAfter": 0,
+          "targetAfter": 0.119,
+          "typicalAfter": 0.119,
+          "filterAttack": 0.119,
+          "channelAttack": 0.249,
+          "grayAttack": 0.002,
+          "equalY": false,
+          "isoY": {
+            "score": -0.03,
+            "diff": 0.013,
+            "gray": 0
+          },
+          "nearNull": {
+            "score": -0.032,
+            "diff": 0.013,
+            "gray": 0.002
+          },
+          "syntheticPosterior": 0.714,
+          "candidate": {
+            "id": "c-1b2a32e2",
+            "seed": 455750370,
+            "family": "dots",
+            "kind": "normal",
+            "severity": 0,
+            "signal": 0.004,
+            "distraction": 0.025522640893748835,
+            "residualNoise": 0.05,
+            "luminanceNoise": 0.025,
+            "equalY": false,
+            "angle": -0.04507694123312832,
+            "size": 8.866458335720662,
+            "base": 0.31717511082160493,
+            "invert": false
+          }
+        },
+        {
+          "seed": 6,
+          "fit": "normal",
+          "label": "Uncertain / overlapping models",
+          "severity": 0,
+          "interval": [
+            0,
+            0
+          ],
+          "confidence": "limited",
+          "fitObjectiveBefore": -0.529,
+          "fitObjectiveAfter": -0.059,
+          "fitDiffBefore": -0.083,
+          "fitDiffAfter": -0.002,
+          "trueDiffBefore": 0,
+          "trueDiffAfter": 0,
+          "targetAfter": 0.038,
+          "typicalAfter": 0.038,
+          "filterAttack": 0.038,
+          "channelAttack": 0.268,
+          "grayAttack": 0.001,
+          "equalY": true,
+          "isoY": {
+            "score": -0.059,
+            "diff": -0.002,
+            "gray": 0.001
+          },
+          "nearNull": {
+            "score": -0.058,
+            "diff": -0.001,
+            "gray": 0.001
+          },
+          "syntheticPosterior": 0.714,
+          "candidate": {
+            "id": "c-d448a130",
+            "seed": 3561529648,
+            "family": "dots",
+            "kind": "normal",
+            "severity": 0,
+            "signal": 0.004,
+            "distraction": 0.35463339878530725,
+            "residualNoise": 0.0471011957881034,
+            "luminanceNoise": 0.006116907006404804,
+            "equalY": true,
+            "angle": -0.03753366167657077,
+            "size": 12.644411957760086,
+            "base": 0.31717511082160493,
+            "invert": false
+          }
+        }
+      ]
+    },
+    {
+      "summary": {
+        "name": "Mild deutan",
+        "kind": "deutan",
+        "severity": 0.3,
+        "n": 6,
+        "familyMatches": 0,
+        "uncertain": 6,
+        "meanSeverity": 0.291,
+        "objectiveBefore": -0.392,
+        "objectiveAfter": 0.098,
+        "trueDiffBefore": 0.052,
+        "trueDiffAfter": 0.095,
+        "improvedRuns": 3,
+        "targetAfter": 0.254,
+        "typicalAfter": 0.159,
+        "filterAttack": 0.254,
+        "channelAttack": 0.959
+      },
+      "runs": [
+        {
+          "seed": 1,
+          "fit": "normal",
+          "label": "Uncertain / overlapping models",
+          "severity": 0,
+          "interval": [
+            0,
+            0
+          ],
+          "confidence": "limited",
+          "fitObjectiveBefore": -0.573,
+          "fitObjectiveAfter": -0.054,
+          "fitDiffBefore": -0.097,
+          "fitDiffAfter": -0.002,
+          "trueDiffBefore": 0.055,
+          "trueDiffAfter": 0.028,
+          "targetAfter": 0.067,
+          "typicalAfter": 0.04,
+          "filterAttack": 0.067,
+          "channelAttack": 0.259,
+          "grayAttack": 0,
+          "equalY": true,
+          "isoY": {
+            "score": -0.054,
+            "diff": -0.002,
+            "gray": 0
+          },
+          "nearNull": {
+            "score": -0.057,
+            "diff": -0.002,
+            "gray": 0.002
+          },
+          "syntheticPosterior": 0.714,
+          "candidate": {
+            "id": "c-fd24669f",
+            "seed": 4247021215,
+            "family": "dots",
+            "kind": "normal",
+            "severity": 0,
+            "signal": 0.004,
+            "distraction": 0.3065209277332248,
+            "residualNoise": 0.05,
+            "luminanceNoise": 0.003991433720062778,
+            "equalY": true,
+            "angle": 0.04983537537045776,
+            "size": 13.8609092930386,
+            "base": 0.31717511082160493,
+            "invert": false
+          }
+        },
+        {
+          "seed": 2,
+          "fit": "normal",
+          "label": "Uncertain / overlapping models",
+          "severity": 0,
+          "interval": [
+            0,
+            0
+          ],
+          "confidence": "limited",
+          "fitObjectiveBefore": -0.584,
+          "fitObjectiveAfter": -0.063,
+          "fitDiffBefore": -0.11,
+          "fitDiffAfter": -0.004,
+          "trueDiffBefore": 0.056,
+          "trueDiffAfter": 0.029,
+          "targetAfter": 0.075,
+          "typicalAfter": 0.046,
+          "filterAttack": 0.075,
+          "channelAttack": 0.267,
+          "grayAttack": 0.003,
+          "equalY": false,
+          "isoY": {
+            "score": -0.061,
+            "diff": -0.004,
+            "gray": 0
+          },
+          "nearNull": {
+            "score": -0.063,
+            "diff": -0.004,
+            "gray": 0.003
+          },
+          "syntheticPosterior": 0.714,
+          "candidate": {
+            "id": "c-baf917e8",
+            "seed": 3136886760,
+            "family": "dots",
+            "kind": "normal",
+            "severity": 0,
+            "signal": 0.004140921333366645,
+            "distraction": 0.3028957040315225,
+            "residualNoise": 0.05,
+            "luminanceNoise": 0.0032959368376300215,
+            "equalY": false,
+            "angle": -0.05307417123112827,
+            "size": 10.84852157236292,
+            "base": 0.31717511082160493,
+            "invert": false
+          }
+        },
+        {
+          "seed": 3,
+          "fit": "normal",
+          "label": "Uncertain / overlapping models",
+          "severity": 0,
+          "interval": [
+            0,
+            0
+          ],
+          "confidence": "limited",
+          "fitObjectiveBefore": -0.496,
+          "fitObjectiveAfter": -0.087,
+          "fitDiffBefore": -0.063,
+          "fitDiffAfter": -0.004,
+          "trueDiffBefore": 0.059,
+          "trueDiffAfter": 0.034,
+          "targetAfter": 0.093,
+          "typicalAfter": 0.059,
+          "filterAttack": 0.093,
+          "channelAttack": 0.422,
+          "grayAttack": 0,
+          "equalY": true,
+          "isoY": {
+            "score": -0.087,
+            "diff": -0.004,
+            "gray": 0
+          },
+          "nearNull": {
+            "score": -0.09,
+            "diff": -0.003,
+            "gray": 0.003
+          },
+          "syntheticPosterior": 0.714,
+          "candidate": {
+            "id": "c-b84dfdab",
+            "seed": 3092118955,
+            "family": "dots",
+            "kind": "normal",
+            "severity": 0,
+            "signal": 0.004350515071134875,
+            "distraction": 0.21867980719334146,
+            "residualNoise": 0.030961399153708317,
+            "luminanceNoise": 0.013503563762049675,
+            "equalY": true,
+            "angle": 0.05036021473351866,
+            "size": 10.601591769940354,
+            "base": 0.31717511082160493,
+            "invert": false
+          }
+        },
+        {
+          "seed": 4,
+          "fit": "protan",
+          "label": "Uncertain / overlapping models",
+          "severity": 0.533,
+          "interval": [
+            0.1,
+            1
+          ],
+          "confidence": "limited",
+          "fitObjectiveBefore": -0.318,
+          "fitObjectiveAfter": 0.17,
+          "fitDiffBefore": 0.033,
+          "fitDiffAfter": 0.184,
+          "trueDiffBefore": 0.048,
+          "trueDiffAfter": 0.1,
+          "targetAfter": 0.268,
+          "typicalAfter": 0.168,
+          "filterAttack": 0.268,
+          "channelAttack": 1.038,
+          "grayAttack": 0.004,
+          "equalY": true,
+          "isoY": {
+            "score": 0.17,
+            "diff": 0.184,
+            "gray": 0.004
+          },
+          "nearNull": {
+            "score": 0.146,
+            "diff": 0.186,
+            "gray": 0.014
+          },
+          "syntheticPosterior": 0.714,
+          "candidate": {
+            "id": "c-be7f5c57",
+            "seed": 3196017751,
+            "family": "dots",
+            "kind": "protan",
+            "severity": 0.5327470588262361,
+            "signal": 0.016613183480185024,
+            "distraction": 0.3569528289520822,
+            "residualNoise": 0.049261307974524576,
+            "luminanceNoise": 0.013421857557814106,
+            "equalY": true,
+            "angle": -0.09926852823700757,
+            "size": 7.147097021541832,
+            "base": 0.31717511082160493,
+            "invert": false
+          }
+        },
+        {
+          "seed": 5,
+          "fit": "protan",
+          "label": "Uncertain / overlapping models",
+          "severity": 0.659,
+          "interval": [
+            0.2,
+            1
+          ],
+          "confidence": "limited",
+          "fitObjectiveBefore": 0.114,
+          "fitObjectiveAfter": 0.519,
+          "fitDiffBefore": 0.277,
+          "fitDiffAfter": 0.587,
+          "trueDiffBefore": 0.046,
+          "trueDiffAfter": 0.191,
+          "targetAfter": 0.534,
+          "typicalAfter": 0.343,
+          "filterAttack": 0.534,
+          "channelAttack": 1.92,
+          "grayAttack": 0,
+          "equalY": true,
+          "isoY": {
+            "score": 0.519,
+            "diff": 0.587,
+            "gray": 0
+          },
+          "nearNull": {
+            "score": 0.555,
+            "diff": 0.646,
+            "gray": 0.014
+          },
+          "syntheticPosterior": 0.714,
+          "candidate": {
+            "id": "c-ec34d38d",
+            "seed": 3962885005,
+            "family": "mosaic",
+            "kind": "protan",
+            "severity": 0.659262676575626,
+            "signal": 0.028487102247492572,
+            "distraction": 0.2909259830603061,
+            "residualNoise": 0.048223947780030224,
+            "luminanceNoise": 0.010283919152019216,
+            "equalY": true,
+            "angle": -0.04277911596000193,
+            "size": 9.126179323609609,
+            "base": 0.31717511082160493,
+            "invert": false
+          }
+        },
+        {
+          "seed": 6,
+          "fit": "protan",
+          "label": "Uncertain / overlapping models",
+          "severity": 0.554,
+          "interval": [
+            0.1,
+            1
+          ],
+          "confidence": "limited",
+          "fitObjectiveBefore": -0.498,
+          "fitObjectiveAfter": 0.104,
+          "fitDiffBefore": -0.066,
+          "fitDiffAfter": 0.258,
+          "trueDiffBefore": 0.046,
+          "trueDiffAfter": 0.191,
+          "targetAfter": 0.486,
+          "typicalAfter": 0.295,
+          "filterAttack": 0.486,
+          "channelAttack": 1.849,
+          "grayAttack": 0.002,
+          "equalY": true,
+          "isoY": {
+            "score": 0.104,
+            "diff": 0.258,
+            "gray": 0.002
+          },
+          "nearNull": {
+            "score": 0.063,
+            "diff": 0.257,
+            "gray": 0.01
+          },
+          "syntheticPosterior": 0.714,
+          "candidate": {
+            "id": "c-9e5bd87",
+            "seed": 166051207,
+            "family": "mosaic",
+            "kind": "protan",
+            "severity": 0.5542347662605951,
+            "signal": 0.029893035192380034,
+            "distraction": 0.3705445673504563,
+            "residualNoise": 0.05,
+            "luminanceNoise": 0.002313195080671209,
+            "equalY": true,
+            "angle": 0.03766857434529811,
+            "size": 6.335164367559615,
+            "base": 0.31717511082160493,
+            "invert": false
+          }
+        }
+      ]
+    },
+    {
+      "summary": {
+        "name": "Strong deutan",
+        "kind": "deutan",
+        "severity": 0.9,
+        "n": 6,
+        "familyMatches": 3,
+        "uncertain": 5,
+        "meanSeverity": 0.721,
+        "objectiveBefore": -0.387,
+        "objectiveAfter": 0.31,
+        "trueDiffBefore": 0.072,
+        "trueDiffAfter": 0.501,
+        "improvedRuns": 6,
+        "targetAfter": 0.752,
+        "typicalAfter": 0.251,
+        "filterAttack": 0.752,
+        "channelAttack": 1.894
+      },
+      "runs": [
+        {
+          "seed": 1,
+          "fit": "protan",
+          "label": "Uncertain / overlapping models",
+          "severity": 0.679,
+          "interval": [
+            0.2,
+            1
+          ],
+          "confidence": "limited",
+          "fitObjectiveBefore": -0.44,
+          "fitObjectiveAfter": 0.238,
+          "fitDiffBefore": -0.031,
+          "fitDiffAfter": 0.36,
+          "trueDiffBefore": 0.057,
+          "trueDiffAfter": 0.219,
+          "targetAfter": 0.486,
+          "typicalAfter": 0.266,
+          "filterAttack": 0.486,
+          "channelAttack": 1.889,
+          "grayAttack": 0.007,
+          "equalY": false,
+          "isoY": {
+            "score": 0.233,
+            "diff": 0.333,
+            "gray": 0.009
+          },
+          "nearNull": {
+            "score": 0.238,
+            "diff": 0.36,
+            "gray": 0.007
+          },
+          "syntheticPosterior": 0.714,
+          "candidate": {
+            "id": "c-f6831386",
+            "seed": 4135785350,
+            "family": "noise",
+            "kind": "protan",
+            "severity": 0.6794115545212096,
+            "signal": 0.028281817374106406,
+            "distraction": 0.39,
+            "residualNoise": 0.05,
+            "luminanceNoise": 0.00640811674818531,
+            "equalY": false,
+            "angle": -0.032889189384877685,
+            "size": 10.543802146409712,
+            "base": 0.31717511082160493,
+            "invert": false
+          }
+        },
+        {
+          "seed": 2,
+          "fit": "deutan",
+          "label": "Uncertain / overlapping models",
+          "severity": 0.746,
+          "interval": [
+            0.3,
+            1
+          ],
+          "confidence": "limited",
+          "fitObjectiveBefore": -0.427,
+          "fitObjectiveAfter": 0.352,
+          "fitDiffBefore": -0.033,
+          "fitDiffAfter": 0.433,
+          "trueDiffBefore": 0.081,
+          "trueDiffAfter": 0.702,
+          "targetAfter": 0.963,
+          "typicalAfter": 0.261,
+          "filterAttack": 0.963,
+          "channelAttack": 2.037,
+          "grayAttack": 0,
+          "equalY": false,
+          "isoY": {
+            "score": 0.28,
+            "diff": 0.389,
+            "gray": 0.007
+          },
+          "nearNull": {
+            "score": 0.352,
+            "diff": 0.433,
+            "gray": 0
+          },
+          "syntheticPosterior": 0.714,
+          "candidate": {
+            "id": "c-9da2c881",
+            "seed": 2644691073,
+            "family": "dots",
+            "kind": "deutan",
+            "severity": 0.7455542149561885,
+            "signal": 0.03179511708324181,
+            "distraction": 0.39,
+            "residualNoise": 0.04918103157022579,
+            "luminanceNoise": 0.013259085083843273,
+            "equalY": false,
+            "angle": -0.008108475524932147,
+            "size": 5,
+            "base": 0.31717511082160493,
+            "invert": false
+          }
+        },
+        {
+          "seed": 3,
+          "fit": "protan",
+          "label": "Uncertain / overlapping models",
+          "severity": 0.511,
+          "interval": [
+            0.1,
+            1
+          ],
+          "confidence": "limited",
+          "fitObjectiveBefore": -0.376,
+          "fitObjectiveAfter": 0.153,
+          "fitDiffBefore": -0.003,
+          "fitDiffAfter": 0.218,
+          "trueDiffBefore": 0.064,
+          "trueDiffAfter": 0.34,
+          "targetAfter": 0.532,
+          "typicalAfter": 0.192,
+          "filterAttack": 0.532,
+          "channelAttack": 1.325,
+          "grayAttack": 0.005,
+          "equalY": true,
+          "isoY": {
+            "score": 0.153,
+            "diff": 0.218,
+            "gray": 0.005
+          },
+          "nearNull": {
+            "score": 0.117,
+            "diff": 0.218,
+            "gray": 0.002
+          },
+          "syntheticPosterior": 0.714,
+          "candidate": {
+            "id": "c-b84dfdab",
+            "seed": 3092118955,
+            "family": "noise",
+            "kind": "protan",
+            "severity": 0.5105345553082659,
+            "signal": 0.021870564428816117,
+            "distraction": 0.39,
+            "residualNoise": 0.05,
+            "luminanceNoise": 0.004716598160985631,
+            "equalY": true,
+            "angle": -0.010729446029290556,
+            "size": 10.601591769940354,
+            "base": 0.31717511082160493,
+            "invert": false
+          }
+        },
+        {
+          "seed": 4,
+          "fit": "protan",
+          "label": "Uncertain / overlapping models",
+          "severity": 0.772,
+          "interval": [
+            0.4,
+            1
+          ],
+          "confidence": "limited",
+          "fitObjectiveBefore": -0.548,
+          "fitObjectiveAfter": 0.1,
+          "fitDiffBefore": -0.085,
+          "fitDiffAfter": 0.209,
+          "trueDiffBefore": 0.065,
+          "trueDiffAfter": 0.156,
+          "targetAfter": 0.353,
+          "typicalAfter": 0.198,
+          "filterAttack": 0.353,
+          "channelAttack": 1.397,
+          "grayAttack": 0.017,
+          "equalY": false,
+          "isoY": {
+            "score": 0.088,
+            "diff": 0.183,
+            "gray": 0.011
+          },
+          "nearNull": {
+            "score": 0.1,
+            "diff": 0.209,
+            "gray": 0.017
+          },
+          "syntheticPosterior": 0.714,
+          "candidate": {
+            "id": "c-be7f5c57",
+            "seed": 3196017751,
+            "family": "dots",
+            "kind": "protan",
+            "severity": 0.7719099727147483,
+            "signal": 0.020588961428300353,
+            "distraction": 0.39,
+            "residualNoise": 0.049261307974524576,
+            "luminanceNoise": 0.010245880465363653,
+            "equalY": false,
+            "angle": -0.10711191284935923,
+            "size": 13.030588800302086,
+            "base": 0.31717511082160493,
+            "invert": false
+          }
+        },
+        {
+          "seed": 5,
+          "fit": "deutan",
+          "label": "Uncertain / overlapping models",
+          "severity": 0.788,
+          "interval": [
+            0.4,
+            1
+          ],
+          "confidence": "limited",
+          "fitObjectiveBefore": -0.017,
+          "fitObjectiveAfter": 0.777,
+          "fitDiffBefore": 0.185,
+          "fitDiffAfter": 1.002,
+          "trueDiffBefore": 0.083,
+          "trueDiffAfter": 0.903,
+          "targetAfter": 1.25,
+          "typicalAfter": 0.347,
+          "filterAttack": 1.25,
+          "channelAttack": 2.664,
+          "grayAttack": 0.001,
+          "equalY": false,
+          "isoY": {
+            "score": 0.648,
+            "diff": 0.879,
+            "gray": 0.01
+          },
+          "nearNull": {
+            "score": 0.777,
+            "diff": 1.002,
+            "gray": 0.001
+          },
+          "syntheticPosterior": 0.714,
+          "candidate": {
+            "id": "c-193893f4",
+            "seed": 423138292,
+            "family": "dots",
+            "kind": "deutan",
+            "severity": 0.7877786721670532,
+            "signal": 0.04164280027778121,
+            "distraction": 0.39,
+            "residualNoise": 0.04992167764937862,
+            "luminanceNoise": 0.014222583797707019,
+            "equalY": false,
+            "angle": -0.0069802659563720365,
+            "size": 7.8672234127019385,
+            "base": 0.31717511082160493,
+            "invert": false
+          }
+        },
+        {
+          "seed": 6,
+          "fit": "deutan",
+          "label": "Deutan-like",
+          "severity": 0.831,
+          "interval": [
+            0.5,
+            1
+          ],
+          "confidence": "limited",
+          "fitObjectiveBefore": -0.513,
+          "fitObjectiveAfter": 0.238,
+          "fitDiffBefore": -0.075,
+          "fitDiffAfter": 0.359,
+          "trueDiffBefore": 0.084,
+          "trueDiffAfter": 0.688,
+          "targetAfter": 0.93,
+          "typicalAfter": 0.242,
+          "filterAttack": 0.93,
+          "channelAttack": 2.054,
+          "grayAttack": 0.017,
+          "equalY": false,
+          "isoY": {
+            "score": 0.178,
+            "diff": 0.323,
+            "gray": 0.019
+          },
+          "nearNull": {
+            "score": 0.238,
+            "diff": 0.359,
+            "gray": 0.017
+          },
+          "syntheticPosterior": 0.714,
+          "candidate": {
+            "id": "c-c1463e8b",
+            "seed": 3242606219,
+            "family": "mosaic",
+            "kind": "deutan",
+            "severity": 0.8309615514233808,
+            "signal": 0.03045536643779406,
+            "distraction": 0.39,
+            "residualNoise": 0.05,
+            "luminanceNoise": 0.011555970518933544,
+            "equalY": false,
+            "angle": 0.05422144355252383,
+            "size": 6.557131535741087,
+            "base": 0.31717511082160493,
+            "invert": false
+          }
+        }
+      ]
+    },
+    {
+      "summary": {
+        "name": "Mild protan",
+        "kind": "protan",
+        "severity": 0.3,
+        "n": 6,
+        "familyMatches": 3,
+        "uncertain": 6,
+        "meanSeverity": 0.282,
+        "objectiveBefore": -0.38,
+        "objectiveAfter": 0.095,
+        "trueDiffBefore": 0.056,
+        "trueDiffAfter": 0.086,
+        "improvedRuns": 3,
+        "targetAfter": 0.228,
+        "typicalAfter": 0.142,
+        "filterAttack": 0.228,
+        "channelAttack": 0.871
+      },
+      "runs": [
+        {
+          "seed": 1,
+          "fit": "normal",
+          "label": "Uncertain / overlapping models",
+          "severity": 0,
+          "interval": [
+            0,
+            0
+          ],
+          "confidence": "limited",
+          "fitObjectiveBefore": -0.563,
+          "fitObjectiveAfter": -0.054,
+          "fitDiffBefore": -0.092,
+          "fitDiffAfter": -0.002,
+          "trueDiffBefore": 0.057,
+          "trueDiffAfter": 0.026,
+          "targetAfter": 0.066,
+          "typicalAfter": 0.04,
+          "filterAttack": 0.066,
+          "channelAttack": 0.259,
+          "grayAttack": 0,
+          "equalY": true,
+          "isoY": {
+            "score": -0.054,
+            "diff": -0.002,
+            "gray": 0
+          },
+          "nearNull": {
+            "score": -0.057,
+            "diff": -0.002,
+            "gray": 0.002
+          },
+          "syntheticPosterior": 0.714,
+          "candidate": {
+            "id": "c-fd24669f",
+            "seed": 4247021215,
+            "family": "dots",
+            "kind": "normal",
+            "severity": 0,
+            "signal": 0.004,
+            "distraction": 0.3065209277332248,
+            "residualNoise": 0.05,
+            "luminanceNoise": 0.003991433720062778,
+            "equalY": true,
+            "angle": 0.04983537537045776,
+            "size": 13.8609092930386,
+            "base": 0.31717511082160493,
+            "invert": false
+          }
+        },
+        {
+          "seed": 2,
+          "fit": "normal",
+          "label": "Uncertain / overlapping models",
+          "severity": 0,
+          "interval": [
+            0,
+            0
+          ],
+          "confidence": "limited",
+          "fitObjectiveBefore": -0.522,
+          "fitObjectiveAfter": -0.055,
+          "fitDiffBefore": -0.081,
+          "fitDiffAfter": -0.001,
+          "trueDiffBefore": 0.057,
+          "trueDiffAfter": 0.022,
+          "targetAfter": 0.058,
+          "typicalAfter": 0.036,
+          "filterAttack": 0.058,
+          "channelAttack": 0.269,
+          "grayAttack": 0.002,
+          "equalY": false,
+          "isoY": {
+            "score": -0.052,
+            "diff": -0.002,
+            "gray": 0
+          },
+          "nearNull": {
+            "score": -0.055,
+            "diff": -0.001,
+            "gray": 0.002
+          },
+          "syntheticPosterior": 0.714,
+          "candidate": {
+            "id": "c-1be33228",
+            "seed": 467874344,
+            "family": "dots",
+            "kind": "normal",
+            "severity": 0,
+            "signal": 0.004,
+            "distraction": 0.3316337535090562,
+            "residualNoise": 0.05,
+            "luminanceNoise": 0.0028618042087694045,
+            "equalY": false,
+            "angle": 0.04514894993044436,
+            "size": 15,
+            "base": 0.31717511082160493,
+            "invert": false
+          }
+        },
+        {
+          "seed": 3,
+          "fit": "normal",
+          "label": "Uncertain / overlapping models",
+          "severity": 0,
+          "interval": [
+            0,
+            0
+          ],
+          "confidence": "limited",
+          "fitObjectiveBefore": -0.496,
+          "fitObjectiveAfter": -0.087,
+          "fitDiffBefore": -0.063,
+          "fitDiffAfter": -0.004,
+          "trueDiffBefore": 0.061,
+          "trueDiffAfter": 0.033,
+          "targetAfter": 0.092,
+          "typicalAfter": 0.059,
+          "filterAttack": 0.092,
+          "channelAttack": 0.422,
+          "grayAttack": 0,
+          "equalY": true,
+          "isoY": {
+            "score": -0.087,
+            "diff": -0.004,
+            "gray": 0
+          },
+          "nearNull": {
+            "score": -0.09,
+            "diff": -0.003,
+            "gray": 0.003
+          },
+          "syntheticPosterior": 0.714,
+          "candidate": {
+            "id": "c-b84dfdab",
+            "seed": 3092118955,
+            "family": "dots",
+            "kind": "normal",
+            "severity": 0,
+            "signal": 0.004350515071134875,
+            "distraction": 0.21867980719334146,
+            "residualNoise": 0.030961399153708317,
+            "luminanceNoise": 0.013503563762049675,
+            "equalY": true,
+            "angle": 0.05036021473351866,
+            "size": 10.601591769940354,
+            "base": 0.31717511082160493,
+            "invert": false
+          }
+        },
+        {
+          "seed": 4,
+          "fit": "protan",
+          "label": "Uncertain / overlapping models",
+          "severity": 0.533,
+          "interval": [
+            0.1,
+            1
+          ],
+          "confidence": "limited",
+          "fitObjectiveBefore": -0.318,
+          "fitObjectiveAfter": 0.17,
+          "fitDiffBefore": 0.033,
+          "fitDiffAfter": 0.184,
+          "trueDiffBefore": 0.054,
+          "trueDiffAfter": 0.102,
+          "targetAfter": 0.271,
+          "typicalAfter": 0.168,
+          "filterAttack": 0.271,
+          "channelAttack": 1.038,
+          "grayAttack": 0.004,
+          "equalY": true,
+          "isoY": {
+            "score": 0.17,
+            "diff": 0.184,
+            "gray": 0.004
+          },
+          "nearNull": {
+            "score": 0.146,
+            "diff": 0.186,
+            "gray": 0.014
+          },
+          "syntheticPosterior": 0.714,
+          "candidate": {
+            "id": "c-be7f5c57",
+            "seed": 3196017751,
+            "family": "dots",
+            "kind": "protan",
+            "severity": 0.5327470588262361,
+            "signal": 0.016613183480185024,
+            "distraction": 0.3569528289520822,
+            "residualNoise": 0.049261307974524576,
+            "luminanceNoise": 0.013421857557814106,
+            "equalY": true,
+            "angle": -0.09926852823700757,
+            "size": 7.147097021541832,
+            "base": 0.31717511082160493,
+            "invert": false
+          }
+        },
+        {
+          "seed": 5,
+          "fit": "protan",
+          "label": "Uncertain / overlapping models",
+          "severity": 0.659,
+          "interval": [
+            0.2,
+            1
+          ],
+          "confidence": "limited",
+          "fitObjectiveBefore": 0.114,
+          "fitObjectiveAfter": 0.519,
+          "fitDiffBefore": 0.277,
+          "fitDiffAfter": 0.587,
+          "trueDiffBefore": 0.052,
+          "trueDiffAfter": 0.196,
+          "targetAfter": 0.538,
+          "typicalAfter": 0.343,
+          "filterAttack": 0.538,
+          "channelAttack": 1.92,
+          "grayAttack": 0,
+          "equalY": true,
+          "isoY": {
+            "score": 0.519,
+            "diff": 0.587,
+            "gray": 0
+          },
+          "nearNull": {
+            "score": 0.555,
+            "diff": 0.646,
+            "gray": 0.014
+          },
+          "syntheticPosterior": 0.714,
+          "candidate": {
+            "id": "c-ec34d38d",
+            "seed": 3962885005,
+            "family": "mosaic",
+            "kind": "protan",
+            "severity": 0.659262676575626,
+            "signal": 0.028487102247492572,
+            "distraction": 0.2909259830603061,
+            "residualNoise": 0.048223947780030224,
+            "luminanceNoise": 0.010283919152019216,
+            "equalY": true,
+            "angle": -0.04277911596000193,
+            "size": 9.126179323609609,
+            "base": 0.31717511082160493,
+            "invert": false
+          }
+        },
+        {
+          "seed": 6,
+          "fit": "protan",
+          "label": "Uncertain / overlapping models",
+          "severity": 0.5,
+          "interval": [
+            0.1,
+            1
+          ],
+          "confidence": "limited",
+          "fitObjectiveBefore": -0.496,
+          "fitObjectiveAfter": 0.075,
+          "fitDiffBefore": -0.065,
+          "fitDiffAfter": 0.17,
+          "trueDiffBefore": 0.053,
+          "trueDiffAfter": 0.136,
+          "targetAfter": 0.341,
+          "typicalAfter": 0.205,
+          "filterAttack": 0.341,
+          "channelAttack": 1.32,
+          "grayAttack": 0.001,
+          "equalY": true,
+          "isoY": {
+            "score": 0.075,
+            "diff": 0.17,
+            "gray": 0.001
+          },
+          "nearNull": {
+            "score": 0.043,
+            "diff": 0.167,
+            "gray": 0.002
+          },
+          "syntheticPosterior": 0.714,
+          "candidate": {
+            "id": "c-7daef824",
+            "seed": 2108618788,
+            "family": "mosaic",
+            "kind": "protan",
+            "severity": 0.5001872624432159,
+            "signal": 0.021072728214781525,
+            "distraction": 0.3724205064407132,
+            "residualNoise": 0.05,
+            "luminanceNoise": 0.001645237508542031,
+            "equalY": true,
+            "angle": 0.014620492025278507,
+            "size": 5.697675371425858,
+            "base": 0.31717511082160493,
+            "invert": false
+          }
+        }
+      ]
+    },
+    {
+      "summary": {
+        "name": "Strong protan",
+        "kind": "protan",
+        "severity": 0.9,
+        "n": 6,
+        "familyMatches": 5,
+        "uncertain": 4,
+        "meanSeverity": 0.67,
+        "objectiveBefore": -0.377,
+        "objectiveAfter": 0.264,
+        "trueDiffBefore": 0.085,
+        "trueDiffAfter": 0.446,
+        "improvedRuns": 6,
+        "targetAfter": 0.703,
+        "typicalAfter": 0.257,
+        "filterAttack": 0.703,
+        "channelAttack": 1.791
+      },
+      "runs": [
+        {
+          "seed": 1,
+          "fit": "protan",
+          "label": "Uncertain / overlapping models",
+          "severity": 0.591,
+          "interval": [
+            0.1,
+            1
+          ],
+          "confidence": "limited",
+          "fitObjectiveBefore": -0.432,
+          "fitObjectiveAfter": 0.179,
+          "fitDiffBefore": -0.027,
+          "fitDiffAfter": 0.316,
+          "trueDiffBefore": 0.079,
+          "trueDiffAfter": 0.484,
+          "targetAfter": 0.801,
+          "typicalAfter": 0.317,
+          "filterAttack": 0.801,
+          "channelAttack": 1.923,
+          "grayAttack": 0.002,
+          "equalY": true,
+          "isoY": {
+            "score": 0.179,
+            "diff": 0.316,
+            "gray": 0.002
+          },
+          "nearNull": {
+            "score": 0.132,
+            "diff": 0.318,
+            "gray": 0.02
+          },
+          "syntheticPosterior": 0.714,
+          "candidate": {
+            "id": "c-3613b68d",
+            "seed": 907261581,
+            "family": "noise",
+            "kind": "protan",
+            "severity": 0.5907375874898236,
+            "signal": 0.029546400797730066,
+            "distraction": 0.3401598890739588,
+            "residualNoise": 0.05,
+            "luminanceNoise": 0.0044309957038122525,
+            "equalY": true,
+            "angle": -0.07057689337525516,
+            "size": 15,
+            "base": 0.31717511082160493,
+            "invert": false
+          }
+        },
+        {
+          "seed": 2,
+          "fit": "protan",
+          "label": "Uncertain / overlapping models",
+          "severity": 0.625,
+          "interval": [
+            0.2,
+            1
+          ],
+          "confidence": "limited",
+          "fitObjectiveBefore": -0.42,
+          "fitObjectiveAfter": 0.213,
+          "fitDiffBefore": -0.026,
+          "fitDiffAfter": 0.283,
+          "trueDiffBefore": 0.08,
+          "trueDiffAfter": 0.393,
+          "targetAfter": 0.621,
+          "typicalAfter": 0.228,
+          "filterAttack": 0.621,
+          "channelAttack": 1.517,
+          "grayAttack": 0.006,
+          "equalY": true,
+          "isoY": {
+            "score": 0.213,
+            "diff": 0.283,
+            "gray": 0.006
+          },
+          "nearNull": {
+            "score": 0.194,
+            "diff": 0.294,
+            "gray": 0.007
+          },
+          "syntheticPosterior": 0.714,
+          "candidate": {
+            "id": "c-1be33228",
+            "seed": 467874344,
+            "family": "dots",
+            "kind": "protan",
+            "severity": 0.6250203709162707,
+            "signal": 0.02528825019257095,
+            "distraction": 0.39,
+            "residualNoise": 0.05,
+            "luminanceNoise": 0.013490026425854805,
+            "equalY": true,
+            "angle": -0.04000536857638509,
+            "size": 10.449278626676021,
+            "base": 0.31717511082160493,
+            "invert": false
+          }
+        },
+        {
+          "seed": 3,
+          "fit": "protan",
+          "label": "Uncertain / overlapping models",
+          "severity": 0.511,
+          "interval": [
+            0.1,
+            1
+          ],
+          "confidence": "limited",
+          "fitObjectiveBefore": -0.376,
+          "fitObjectiveAfter": 0.153,
+          "fitDiffBefore": -0.003,
+          "fitDiffAfter": 0.218,
+          "trueDiffBefore": 0.087,
+          "trueDiffAfter": 0.343,
+          "targetAfter": 0.536,
+          "typicalAfter": 0.192,
+          "filterAttack": 0.536,
+          "channelAttack": 1.325,
+          "grayAttack": 0.005,
+          "equalY": true,
+          "isoY": {
+            "score": 0.153,
+            "diff": 0.218,
+            "gray": 0.005
+          },
+          "nearNull": {
+            "score": 0.117,
+            "diff": 0.218,
+            "gray": 0.002
+          },
+          "syntheticPosterior": 0.714,
+          "candidate": {
+            "id": "c-b84dfdab",
+            "seed": 3092118955,
+            "family": "noise",
+            "kind": "protan",
+            "severity": 0.5105345553082659,
+            "signal": 0.021870564428816117,
+            "distraction": 0.39,
+            "residualNoise": 0.05,
+            "luminanceNoise": 0.004716598160985631,
+            "equalY": true,
+            "angle": -0.010729446029290556,
+            "size": 10.601591769940354,
+            "base": 0.31717511082160493,
+            "invert": false
+          }
+        },
+        {
+          "seed": 4,
+          "fit": "protan",
+          "label": "Uncertain / overlapping models",
+          "severity": 0.76,
+          "interval": [
+            0.4,
+            1
+          ],
+          "confidence": "limited",
+          "fitObjectiveBefore": -0.53,
+          "fitObjectiveAfter": 0.117,
+          "fitDiffBefore": -0.076,
+          "fitDiffAfter": 0.218,
+          "trueDiffBefore": 0.087,
+          "trueDiffAfter": 0.456,
+          "targetAfter": 0.654,
+          "typicalAfter": 0.198,
+          "filterAttack": 0.654,
+          "channelAttack": 1.397,
+          "grayAttack": 0.017,
+          "equalY": false,
+          "isoY": {
+            "score": 0.105,
+            "diff": 0.192,
+            "gray": 0.011
+          },
+          "nearNull": {
+            "score": 0.117,
+            "diff": 0.218,
+            "gray": 0.017
+          },
+          "syntheticPosterior": 0.714,
+          "candidate": {
+            "id": "c-be7f5c57",
+            "seed": 3196017751,
+            "family": "dots",
+            "kind": "protan",
+            "severity": 0.7604503686133305,
+            "signal": 0.020588961428300353,
+            "distraction": 0.39,
+            "residualNoise": 0.049261307974524576,
+            "luminanceNoise": 0.010245880465363653,
+            "equalY": false,
+            "angle": -0.10711191284935923,
+            "size": 13.030588800302086,
+            "base": 0.31717511082160493,
+            "invert": false
+          }
+        },
+        {
+          "seed": 5,
+          "fit": "protan",
+          "label": "Protan-like",
+          "severity": 0.767,
+          "interval": [
+            0.4,
+            1
+          ],
+          "confidence": "limited",
+          "fitObjectiveBefore": -0.025,
+          "fitObjectiveAfter": 0.652,
+          "fitDiffBefore": 0.188,
+          "fitDiffAfter": 0.729,
+          "trueDiffBefore": 0.083,
+          "trueDiffAfter": 0.674,
+          "targetAfter": 0.973,
+          "typicalAfter": 0.299,
+          "filterAttack": 0.973,
+          "channelAttack": 2.009,
+          "grayAttack": 0.008,
+          "equalY": false,
+          "isoY": {
+            "score": 0.494,
+            "diff": 0.552,
+            "gray": 0.005
+          },
+          "nearNull": {
+            "score": 0.652,
+            "diff": 0.729,
+            "gray": 0.008
+          },
+          "syntheticPosterior": 0.714,
+          "candidate": {
+            "id": "c-193893f4",
+            "seed": 423138292,
+            "family": "dots",
+            "kind": "protan",
+            "severity": 0.7672202181905509,
+            "signal": 0.031188657269863248,
+            "distraction": 0.39,
+            "residualNoise": 0.05,
+            "luminanceNoise": 0.01479605650027104,
+            "equalY": false,
+            "angle": -0.02947362947743387,
+            "size": 6.8058307367710045,
+            "base": 0.31717511082160493,
+            "invert": false
+          }
+        },
+        {
+          "seed": 6,
+          "fit": "deutan",
+          "label": "Deutan-like",
+          "severity": 0.764,
+          "interval": [
+            0.4,
+            1
+          ],
+          "confidence": "limited",
+          "fitObjectiveBefore": -0.478,
+          "fitObjectiveAfter": 0.269,
+          "fitDiffBefore": -0.058,
+          "fitDiffAfter": 0.473,
+          "trueDiffBefore": 0.094,
+          "trueDiffAfter": 0.326,
+          "targetAfter": 0.635,
+          "typicalAfter": 0.309,
+          "filterAttack": 0.635,
+          "channelAttack": 2.574,
+          "grayAttack": 0.014,
+          "equalY": false,
+          "isoY": {
+            "score": 0.209,
+            "diff": 0.431,
+            "gray": 0.018
+          },
+          "nearNull": {
+            "score": 0.269,
+            "diff": 0.473,
+            "gray": 0.014
+          },
+          "syntheticPosterior": 0.714,
+          "candidate": {
+            "id": "c-c1463e8b",
+            "seed": 3242606219,
+            "family": "mosaic",
+            "kind": "deutan",
+            "severity": 0.7638308215054472,
+            "signal": 0.03856864321086132,
+            "distraction": 0.39,
+            "residualNoise": 0.05,
+            "luminanceNoise": 0.013721099808809947,
+            "equalY": false,
+            "angle": 0.03149275556206702,
+            "size": 6.964712754490194,
+            "base": 0.31717511082160493,
+            "invert": false
+          }
+        }
+      ]
+    }
+  ]
+}
